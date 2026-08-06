@@ -1,0 +1,27 @@
+.contact {
+  border-top: 1px solid var(--border-cold-soft);
+  text-align: center;
+}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-bottom: 16px;
+}
+
+.contact__lede {
+  text-align: center;
+}
+
+.contact__actions {
+  margin-top: 36px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

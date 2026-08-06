@@ -1,0 +1,135 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav--scrolled {
+  background: rgba(8, 11, 18, 0.82);
+  backdrop-filter: blur(10px);
+  border-color: var(--border-cold-soft);
+}
+
+.nav__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px var(--edge);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.nav__mark-accent {
+  color: var(--accent);
+}
+
+.nav__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px 1px var(--accent);
+}
+
+.nav__links {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+}
+
+.nav__links a {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.nav__links a:hover {
+  color: var(--accent);
+}
+
+.nav__cta {
+  padding: 9px 16px;
+  font-size: 13px;
+}
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+}
+
+.nav__toggle span {
+  height: 1.5px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav__toggle.is-open span:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+
+.nav__toggle.is-open span:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
+}
+
+.nav__mobile {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav__mobile {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background: var(--bg-panel);
+    border-bottom: 1px solid var(--border-cold-soft);
+    transition: max-height 0.3s ease;
+  }
+
+  .nav__mobile.is-open {
+    max-height: 320px;
+  }
+
+  .nav__mobile a {
+    padding: 16px var(--edge);
+    border-top: 1px solid var(--border-cold-soft);
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+
+  .nav__mobile-github {
+    color: var(--accent) !important;
+  }
+}

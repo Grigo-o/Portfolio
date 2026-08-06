@@ -1,0 +1,45 @@
+.education {
+  border-top: 1px solid var(--border-cold-soft);
+}
+
+.education__list {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border-left: 1px solid var(--border-cold);
+  padding-left: 32px;
+}
+
+.education__item {
+  position: relative;
+}
+
+.education__marker {
+  position: absolute;
+  left: -37.5px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--bg-void);
+  border: 1.5px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--bg-void);
+}
+
+.education__program {
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.education__org {
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.education__note {
+  color: var(--text-secondary);
+  font-size: 14.5px;
+  max-width: 60ch;
+}
