@@ -10,17 +10,16 @@ export default function Hero() {
       <div className="section-inner hero__inner">
         <p className="eyebrow">available for junior fullstack roles</p>
 
-        <h1 className="hero__title">
-          Saba Grigolia
-        </h1>
+        <h1 className="hero__title">Saba Grigolia</h1>
 
         <p className="hero__role mono">
-          Junior Fullstack Developer <span className="hero__sep">/</span> CS Student
+          Junior Fullstack Developer <span className="hero__sep">/</span> CS
+          Student
         </p>
 
         <p className="hero__lede">
           Computer science student at Kutaisi International University, building
-          across the stack — from React interfaces down to the network protocols
+          across the stack, from React interfaces down to the network protocols
           and distributed systems underneath them.
         </p>
 

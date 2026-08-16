@@ -27,9 +27,19 @@ const EDGES = [
 
 const PULSES = [
   { path: "n0 n1 n3 n5", dur: "6.5s", delay: "0s", color: "var(--accent)" },
-  { path: "n7 n2 n4", dur: "5.2s", delay: "1.4s", color: "var(--accent-violet)" },
+  {
+    path: "n7 n2 n4",
+    dur: "5.2s",
+    delay: "1.4s",
+    color: "var(--accent-violet)",
+  },
   { path: "n0 n7 n6 n2 n1", dur: "8s", delay: "0.6s", color: "var(--accent)" },
-  { path: "n5 n4 n2 n6", dur: "7s", delay: "3s", color: "var(--accent-violet)" },
+  {
+    path: "n5 n4 n2 n6",
+    dur: "7s",
+    delay: "3s",
+    color: "var(--accent-violet)",
+  },
 ];
 
 function pathFromIds(ids) {

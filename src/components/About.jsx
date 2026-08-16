@@ -4,7 +4,7 @@ const FOCUS_AREAS = [
   {
     label: "Frontend",
     detail:
-      "React, TypeScript, Redux Toolkit — interfaces that stay predictable under real state.",
+      "React, TypeScript, Redux Toolkit, interfaces that stay predictable under real state.",
   },
   {
     label: "Backend",
@@ -30,9 +30,9 @@ export default function About() {
           <p className="section-lede about__lede">
             I'm a computer science student at Kutaisi International University
             and a junior fullstack developer. Most of my time goes into web
-            development — building interfaces in React, then wiring them up to
+            development, building interfaces in React, then wiring them up to
             APIs and a database that actually holds together, whether that's
-            PostgreSQL or MongoDB. No professional experience yet — what I have
+            PostgreSQL or MongoDB. No professional experience yet, what I have
             instead is a habit of finishing what I start and shipping it
             publicly.
           </p>

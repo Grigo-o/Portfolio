@@ -12,7 +12,7 @@ const PROJECTS = [
   {
     name: "KAT-Front",
     summary:
-      "Frontend for a Kutaisi Airport website — pages and layouts talking to a separate backend service over Axios.",
+      "Frontend for a Kutaisi Airport website, pages and layouts talking to a separate backend service over Axios.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Axios"],
     repo: "https://github.com/Grigo-o/KAT-Front",
     demo: null,
@@ -36,15 +36,23 @@ const PROJECTS = [
   {
     name: "Clash of Stats",
     summary:
-      "A Clash of Clans companion site — a reference for troops, heroes, and spells with quick compare links between units.",
+      "A Clash of Clans companion site. A reference for troops, heroes, and spells with quick compare links between units.",
     stack: ["HTML", "CSS", "JavaScript"],
     repo: null,
     demo: "https://clashofstats.netlify.app/",
   },
   {
+    name: "Switch Simulator",
+    summary:
+      "An interactive acoustic datasheet for mechanical keyboard switches, press one to hear it actuate, with every sound synthesized live via the Web Audio API instead of sampled recordings.",
+    stack: ["React", "Vite", "Web Audio API"],
+    repo: "https://github.com/Grigo-o/Switch-Simulator",
+    demo: "https://switchsimulator.netlify.app/",
+  },
+  {
     name: "Duckietown Convoying",
     summary:
-      "A robotics control pipeline where a follower robot tracks a leader and holds its lane — HSV-based leader detection, lane detection, AprilTag sign recognition, and a PD controller tying it together.",
+      "A robotics control pipeline where a follower robot tracks a leader and holds its lane. HSV-based leader detection, lane detection, AprilTag sign recognition, and a PD controller tying it together.",
     stack: ["Python", "Computer Vision", "Robotics", "Control Systems"],
     repo: "https://github.com/Grigo-o/Duckietown",
     demo: null,
